@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GIẢI BÓNG ĐÁ VÔ ĐỊCH SÂN 7 ĐIỆN MÁY XANH ĐÔNG TÂY BẮC 2026</title>
+
+<style>
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#081b2e;
+    color:white;
+}
+
+/* ẢNH AUTO */
+img{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+
+/* HEADER */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 5%;
+    height:80px;
+    background:#06101b;
+    gap:10px;
+
+    position:sticky;   /* QUAN TRỌNG */
+    top:0;             /* DÍNH TRÊN */
+    z-index:999;       /* KHÔNG BỊ ĐÈ */
+}
+}
+
+/* LOGO */
+.logo{
+    flex-shrink:0; /* không cho bị giãn */
+}
+
+.logo img{
+    height:50px;
+    width:auto;
+    max-height:50px; /* CHẶN CỨNG */
+}
+/* MENU */
+nav{
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-size:clamp(14px, 1.2vw, 18px);
+    white-space:nowrap; /* THÊM DÒNG NÀY */
+}
+
+/* BUTTON */
+.btn-buy{
+    background:#ff5a1f;
+    padding:10px 20px;
+    border-radius:25px;
+}
+
+/* BANNER */
+.banner{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    padding:40px 5%;
+    gap:40px;
+}
+
+/* ẢNH */
+.banner img{
+    width:100%;
+    max-width:700px;
+    border-radius:10px;
+}
+
+/* WRAP ẢNH */
+.img-wrap{
+    position:relative;
+    max-width:700px;
+    width:100%;
+}
+
+/* PLAY BUTTON */
+.play-btn{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:rgba(0,0,0,0.6);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    border:2px solid white;
+}
+
+/* BADGE */
+.badge{
+    position:absolute;
+    top:15px;
+    left:15px;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:bold;
+    background:gray;
+}
+
+/* TEXT */
+.match-info{
+    max-width:500px;
+}
+
+.match-info h2{
+    font-size:clamp(16px, 2vw, 22px);
+    line-height:1.4;
+}
+
+/* TITLE */
+.match-info h1{
+    font-size:clamp(26px,5vw,48px);
+    margin:20px 0;
+}
+
+/* BUTTON */
+.btn-watch{
+    display:inline-block;
+    margin-top:10px;
+    background:#ff5a1f;
+    padding:12px 25px;
+    border-radius:25px;
+    text-decoration:none;
+    color:white;
+}
+
+.btn-watch:hover{
+    background:#ff7a3d;
+}
+
+/* MOBILE (FIX KÍCH CỠ) */
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        height:auto;
+        padding:10px 5%;
+    }
+
+    nav{
+        flex-wrap:nowrap;
+        overflow-x:auto;
+        justify-content:flex-start; /* QUAN TRỌNG */
+        width:100%;
+    }
+
+    nav a{
+        flex:0 0 auto; /* không bị co chữ */
+    }
+
+    .banner{
+        flex-direction:column;
+        padding:25px 5%;
+        gap:20px;
+    }
+
+    .img-wrap{
+        max-width:100%;
+    }
+
+    .match-info{
+        max-width:100%;
+        text-align:center;
+    }
+.logo img{
+    height:40px; /* nhỏ lại cho gọn */
+    max-height:40px;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+    <img src="https://github.com/bongdaphongtraophutho/live/blob/main/News%20Live%20Media.png?raw=true">
+</div>
+<nav>
+    <a href="#top">Trang chủ</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="https://www.tiktok.com/@bongdaphutho19">Highlight</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#binhchon">Bình chọn cầu thủ</a>
+</nav>
+
+<a href="tel:097888381"
+   class="btn-buy"
+   style="text-decoration:none; color:white; background:#28a745;">
+   📞 Liên hệ trực tiếp
+</a>
+
+</header>
+
+<!-- MATCH 1 -->
+<section class="banner">
+
+<div class="img-wrap">
+<a id="link1" href="https://www.youtube.com/@bongaphongtraophutho721" target="_blank">
+
+<img src="https://scontent.fhan15-2.fna.fbcdn.net/v/t39.30808-6/652154486_1569316985195055_1631050402185690797_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=2a1932&_nc_ohc=nPeN7Rb3he8Q7kNvwFnSP8b&_nc_oc=Adl34D2Z9n2SL1XYK82cE4lbdMZ9VlBJ26cFALstBmvXU4kTVxwj7ZdBwjkY3j9cc2O1f6VRY9fC7wZwc-7n6PyM&_nc_zt=23&_nc_ht=scontent.fhan15-2.fna&_nc_gid=wOHOS5xVcbPmFsYgBK20gQ&_nc_ss=8&oh=00_AfytkhCfxLQuCsn-r22zmIEMuQydaBiHrc7BheXbApU2Sw&oe=69BEE2E9">
+
+<div id="badge1" class="badge">⏳ SẮP DIỄN RA</div>
+
+
+
+</a>
+</div>
+
+<div class="match-info">
+
+<h2>GIẢI BÓNG ĐÁ VÔ ĐỊCH SÂN 7 ĐIỆN MÁY XANH ĐÔNG TÂY BẮC - MÙA GIẢI 2026
+<br>
+VƯỢT ĐỈNH IPO - VƯƠN TẦM KHU VỰC - RỰC LỬA SÂN CỎ
+</h2>
+
+<br>
+
+<div style="font-size:22px;opacity:0.9;">(Vòng 1)</div>
+
+<h1>FC THÁI NGUYÊN VS OPPO</h1>
+
+<div style="font-size:20px;opacity:0.85;">
+<b>14:30</b> - 28/3/2026
+</div>
+
+<br>
+
+<a href="https://web.facebook.com/bongdaphongtraopt" class="btn-watch">▶ Xem ngay trên Facebook</a><br>
+<a href="https://www.youtube.com/@bongaphongtraophutho721" class="btn-watch">▶ Xem ngay trên Youtube</a>
+
+</div>
+
+</section>
+
+<hr style="border:none;height:1px;background:rgba(255,255,255,0.15);margin:40px 0;">
+
+<!-- MATCH 2 -->
+<section class="banner">
+
+<div class="img-wrap">
+<a id="link2" href="https://www.youtube.com/@bongaphongtraophutho721" target="_blank">
+
+<img src="https://scontent.fhan15-2.fna.fbcdn.net/v/t39.30808-6/652154486_1569316985195055_1631050402185690797_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=2a1932&_nc_ohc=nPeN7Rb3he8Q7kNvwFnSP8b&_nc_oc=Adl34D2Z9n2SL1XYK82cE4lbdMZ9VlBJ26cFALstBmvXU4kTVxwj7ZdBwjkY3j9cc2O1f6VRY9fC7wZwc-7n6PyM&_nc_zt=23&_nc_ht=scontent.fhan15-2.fna&_nc_gid=wOHOS5xVcbPmFsYgBK20gQ&_nc_ss=8&oh=00_AfytkhCfxLQuCsn-r22zmIEMuQydaBiHrc7BheXbApU2Sw&oe=69BEE2E9">
+
+<div id="badge2" class="badge">⏳ SẮP DIỄN RA</div>
+
+
+
+</a>
+</div>
+
+<div class="match-info">
+
+<h2>GIẢI BÓNG ĐÁ VÔ ĐỊCH SÂN 7 ĐIỆN MÁY XANH ĐÔNG TÂY BẮC - MÙA GIẢI 2026
+<br>
+VƯỢT ĐỈNH IPO - VƯƠN TẦM KHU VỰC - RỰC LỬA SÂN CỎ</h2>
+
+<br>
+
+<div style="font-size:22px;opacity:0.9;">(Vòng 1)</div>
+
+<h1>FC ĐẤT TỔ VS XIAOMI</h1>
+
+<div style="font-size:20px;opacity:0.85;">
+<b>14:30</b> - 28/3/2026
+</div>
+
+<br>
+
+<a href="https://web.facebook.com/bongdaphongtraopt" class="btn-watch">▶ Xem ngay trên Facebook</a><br>
+<a href="https://www.youtube.com/@bongaphongtraophutho721" class="btn-watch">▶ Xem ngay trên Youtube</a>
+
+</div>
+
+</section>
+
+<hr style="border:none;height:1px;background:rgba(255,255,255,0.15);margin:40px 0;">
+
+<!-- FORM -->
+<div id="binhchon" style="width:100%;padding:0 5%;margin-bottom:50px;">
+<div style="position:relative;padding-top:120%;">
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSczkAq5Ju4sLAr7GF8ihSKmxPNk3uaTug0DFt2LYKw-bcUI9w/viewform?embedded=true"
+style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;">
+</iframe>
+</div>
+</div>
+
+<!-- SCRIPT AUTO -->
+<script>
+
+function setupMatch(badgeId, linkId, start, end, url){
+    const badge = document.getElementById(badgeId);
+    const link = document.getElementById(linkId);
+
+    function update(){
+        const now = new Date();
+
+        if(now < new Date(start)){
+            badge.innerHTML = "⏳ SẮP DIỄN RA";
+            badge.style.background = "gray";
+            link.href = "#";
+        }
+        else if(now <= new Date(end)){
+            badge.innerHTML = "🔴 LIVE";
+            badge.style.background = "red";
+            link.href = url;
+        }
+        else{
+            badge.innerHTML = "🎬 HIGHLIGHT";
+            badge.style.background = "#ff5a1f";
+            link.href = url;
+        }
+    }
+
+    update();
+    setInterval(update,30000);
+}
+
+setupMatch("badge1","link1","2026-03-28T13:30:00","2026-03-28T15:30:00","https://facebook.com/bongdaphongtraopt");
+
+setupMatch("badge2","link2","2026-03-28T15:30:00","2026-03-28T17:30:00","https://facebook.com/bongdaphongtraopt");
+
+</script>
+
+</body>
+</html>
