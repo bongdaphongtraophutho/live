@@ -142,15 +142,13 @@ nav a{
 
 </header>
 
-<!-- ===== TRẬN 1 ===== -->
-<section class="banner">
-
 <div style="position:relative;width:100%;max-width:700px;">
 
 <a id="matchLink1" href="#" target="_blank">
 
 <img src="https://scontent.fhan15-2.fna.fbcdn.net/v/t39.30808-6/652154486_1569316985195055_1631050402185690797_n.jpg">
 
+<!-- BADGE -->
 <div id="liveBadge1" style="
 position:absolute;
 top:15px;
@@ -163,6 +161,7 @@ font-weight:bold;">
 ⏳ SẮP DIỄN RA
 </div>
 
+<!-- PLAY -->
 <div style="
 position:absolute;
 top:50%;
@@ -184,18 +183,7 @@ border:2px solid white;">
 
 </div>
 
-<div class="match-info">
-<h2>GIẢI BÓNG ĐÁ THPT PHÚ THỌ LẦN II</h2>
-<h1>ĐỘI A VS ĐỘI B</h1>
-<b>14:30 - 28/3/2026</b>
-</div>
-
-</section>
-
 <hr style="margin:40px 0;">
-
-<!-- ===== TRẬN 2 ===== -->
-<section class="banner">
 
 <div style="position:relative;width:100%;max-width:700px;">
 
@@ -235,15 +223,6 @@ border:2px solid white;">
 </a>
 
 </div>
-
-<div class="match-info">
-<h2>GIẢI BÓNG ĐÁ THPT PHÚ THỌ LẦN II</h2>
-<h1>ĐỘI C VS ĐỘI D</h1>
-<b>14:30 - 28/3/2026</b>
-</div>
-
-</section>
-
 <hr style="margin:40px 0;">
 
 <!-- GOOGLE FORM -->
@@ -276,7 +255,7 @@ function setupMatch(badgeId, linkId, start, end, liveLink){
             link.href = liveLink;
         }
         else{
-            badge.innerHTML = "🎬 ĐÃ KẾT THÚC";
+            badge.innerHTML = "🎬 HIGHLIGHT";
             badge.style.background = "#ff5a1f";
             link.href = liveLink;
         }
@@ -286,8 +265,23 @@ function setupMatch(badgeId, linkId, start, end, liveLink){
     setInterval(update,30000);
 }
 
-setupMatch("liveBadge1","matchLink1","2026-03-28T14:30:00","2026-03-28T16:30:00","https://www.youtube.com/watch?v=RuGXo-KUFUY");
-setupMatch("liveBadge2","matchLink2","2026-03-28T15:30:00","2026-03-28T17:30:00","https://www.youtube.com/watch?v=RuGXo-KUFUY");
+// TRẬN 1
+setupMatch(
+"liveBadge1",
+"matchLink1",
+"2026-03-28T14:30:00",
+"2026-03-28T16:30:00",
+"https://www.youtube.com/watch?v=RuGXo-KUFUY"
+);
+
+// TRẬN 2
+setupMatch(
+"liveBadge2",
+"matchLink2",
+"2026-03-28T15:30:00",
+"2026-03-28T17:30:00",
+"https://www.youtube.com/watch?v=RuGXo-KUFUY"
+);
 
 </script>
 
