@@ -246,7 +246,7 @@ function updateStatus(){
         link.href = liveLink;
     }
     else{
-        badge.innerHTML = "🎬 HIGHLIGHT";
+        badge.innerHTML = "🎬 ĐÃ KẾT THÚC";
         badge.style.background = "#ff5a1f";
         link.href = highlightLink;
     }
@@ -298,9 +298,89 @@ TRANH CUP DU HỌC VIỆT VƯỢNG - CÔ NGÀ KOREA NĂM 2026
 
 <section class="banner">
 
-<img src="https://scontent.fhan15-2.fna.fbcdn.net/v/t39.30808-6/652154486_1569316985195055_1631050402185690797_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=2a1932&_nc_ohc=nPeN7Rb3he8Q7kNvwFnSP8b&_nc_oc=Adl34D2Z9n2SL1XYK82cE4lbdMZ9VlBJ26cFALstBmvXU4kTVxwj7ZdBwjkY3j9cc2O1f6VRY9fC7wZwc-7n6PyM&_nc_zt=23&_nc_ht=scontent.fhan15-2.fna&_nc_gid=tE3Is64aYXpnNbrDh5P_jg&_nc_ss=8&oh=00_AfyQxH4SLa3z52RhhTmDYsS0GqF4W5Lp4brELpTtssyhhg&oe=69BEE2E9" alt="Giải đấu">
+ <!-- ẢNH -->
+    <img src="https://scontent.fhan15-2.fna.fbcdn.net/v/t39.30808-6/652154486_1569316985195055_1631050402185690797_n.jpg"
+         style="width:100%;border-radius:12px;display:block;">
 
-<div class="match-info">
+    <!-- BADGE -->
+    <div id="liveBadge" style="
+        position:absolute;
+        top:15px;
+        left:15px;
+        background:gray;
+        color:white;
+        padding:5px 12px;
+        font-weight:bold;
+        font-size:14px;
+        border-radius:20px;
+    ">
+        ⏳ SẮP DIỄN RA
+    </div>
+
+    <!-- PLAY -->
+    <div style="
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        width:80px;
+        height:80px;
+        background:rgba(0,0,0,0.6);
+        border-radius:50%;
+        border:3px solid white;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-size:40px;
+        color:white;
+    ">
+        ▶
+    </div>
+
+  </a>
+
+</div>
+
+<script>
+
+// ====== CÀI ĐẶT THỜI GIAN ======
+const startTime = new Date("2026-03-28T14:30:00"); // giờ bắt đầu
+const endTime   = new Date("2026-03-28T16:30:00"); // giờ kết thúc
+
+// ====== LINK ======
+const liveLink = "https://www.youtube.com/watch?v=RuGXo-KUFUY";
+const highlightLink = "https://www.youtube.com/watch?v=RuGXo-KUFUY"; // sau này thay highlight
+
+// ====== ELEMENT ======
+const badge = document.getElementById("liveBadge");
+const link = document.getElementById("matchLink");
+
+// ====== UPDATE ======
+function updateStatus(){
+    const now = new Date();
+
+    if(now < startTime){
+        badge.innerHTML = "⏳ SẮP DIỄN RA";
+        badge.style.background = "gray";
+        link.href = "#";
+    }
+    else if(now >= startTime && now <= endTime){
+        badge.innerHTML = "🔴 LIVE";
+        badge.style.background = "red";
+        link.href = liveLink;
+    }
+    else{
+        badge.innerHTML = "🎬 ĐÃ KẾT THÚC";
+        badge.style.background = "#ff5a1f";
+        link.href = highlightLink;
+    }
+}
+
+// chạy ngay + tự cập nhật mỗi 30s
+updateStatus();
+setInterval(updateStatus, 30000);
+
+</script>
 
 <h2>
 GIẢI BÓNG ĐÁ THPT PHÚ THỌ LẦN II<br>
