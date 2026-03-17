@@ -99,47 +99,6 @@ nav a{
     color:white;
 }
 
-/* VIDEO BOX */
-.video-box{
-    position:relative;
-    width:100%;
-    max-width:700px;
-}
-
-.video-box img{
-    width:100%;
-    border-radius:12px;
-}
-
-/* BADGE */
-.badge{
-    position:absolute;
-    top:15px;
-    left:15px;
-    background:gray;
-    padding:5px 12px;
-    border-radius:20px;
-    font-size:14px;
-    font-weight:bold;
-}
-
-/* PLAY */
-.play-btn{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    width:70px;
-    height:70px;
-    background:rgba(0,0,0,0.6);
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:30px;
-    border:2px solid white;
-}
-
 /* MOBILE */
 @media(max-width:768px){
 
@@ -164,6 +123,7 @@ nav a{
 <body id="top">
 
 <header>
+
 <div class="logo">
     <img src="https://github.com/bongdaphongtraophutho/live/blob/main/News%20Live%20Media.png?raw=true">
 </div>
@@ -174,80 +134,131 @@ nav a{
     <a href="#binhchon">Bình chọn cầu thủ</a>
 </nav>
 
-<a href="tel:097888381" class="btn-buy" style="background:#28a745;">
+<a href="tel:097888381"
+   class="btn-buy"
+   style="background:#28a745;">
 📞 Liên hệ trực tiếp
 </a>
+
 </header>
 
 <!-- ===== TRẬN 1 ===== -->
 <section class="banner">
 
-<div class="video-box">
-<a id="link1" href="#" target="_blank">
+<div style="position:relative;width:100%;max-width:700px;">
+
+<a id="matchLink1" href="#" target="_blank">
+
 <img src="https://scontent.fhan15-2.fna.fbcdn.net/v/t39.30808-6/652154486_1569316985195055_1631050402185690797_n.jpg">
 
-<div id="badge1" class="badge">⏳ SẮP DIỄN RA</div>
-<div class="play-btn">▶</div>
+<div id="liveBadge1" style="
+position:absolute;
+top:15px;
+left:15px;
+background:gray;
+padding:5px 12px;
+border-radius:20px;
+font-size:14px;
+font-weight:bold;">
+⏳ SẮP DIỄN RA
+</div>
+
+<div style="
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+width:70px;
+height:70px;
+background:rgba(0,0,0,0.6);
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+border:2px solid white;">
+▶
+</div>
 
 </a>
+
 </div>
 
 <div class="match-info">
+<h2>GIẢI BÓNG ĐÁ THPT PHÚ THỌ LẦN II</h2>
 <h1>ĐỘI A VS ĐỘI B</h1>
 <b>14:30 - 28/3/2026</b>
 </div>
 
 </section>
 
-<hr>
+<hr style="margin:40px 0;">
 
 <!-- ===== TRẬN 2 ===== -->
 <section class="banner">
 
-<div class="video-box">
-<a id="link2" href="#" target="_blank">
+<div style="position:relative;width:100%;max-width:700px;">
+
+<a id="matchLink2" href="#" target="_blank">
+
 <img src="https://scontent.fhan15-2.fna.fbcdn.net/v/t39.30808-6/652154486_1569316985195055_1631050402185690797_n.jpg">
 
-<div id="badge2" class="badge">⏳ SẮP DIỄN RA</div>
-<div class="play-btn">▶</div>
+<div id="liveBadge2" style="
+position:absolute;
+top:15px;
+left:15px;
+background:gray;
+padding:5px 12px;
+border-radius:20px;
+font-size:14px;
+font-weight:bold;">
+⏳ SẮP DIỄN RA
+</div>
+
+<div style="
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+width:70px;
+height:70px;
+background:rgba(0,0,0,0.6);
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+border:2px solid white;">
+▶
+</div>
 
 </a>
+
 </div>
 
 <div class="match-info">
+<h2>GIẢI BÓNG ĐÁ THPT PHÚ THỌ LẦN II</h2>
 <h1>ĐỘI C VS ĐỘI D</h1>
 <b>14:30 - 28/3/2026</b>
 </div>
 
 </section>
 
-<hr>
+<hr style="margin:40px 0;">
 
 <!-- GOOGLE FORM -->
-<div id="binhchon" style="padding:0 5%;">
-<div style="position:relative;padding-top:120%;">
-<iframe 
-src="https://docs.google.com/forms/d/e/1FAIpQLSczkAq5Ju4sLAr7GF8ihSKmxPNk3uaTug0DFt2LYKw-bcUI9w/viewform?embedded=true"
-style="position:absolute;width:100%;height:100%;border:none;">
-</iframe>
-</div>
+<div id="binhchon" style="width:100%;padding:0 5%;margin-bottom:50px;">
+  <div style="position:relative;padding-top:120%;">
+    <iframe 
+      src="https://docs.google.com/forms/d/e/1FAIpQLSczkAq5Ju4sLAr7GF8ihSKmxPNk3uaTug0DFt2LYKw-bcUI9w/viewform?embedded=true"
+      style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;">
+    </iframe>
+  </div>
 </div>
 
 <script>
 
-// ===== TRẬN 1 =====
-updateMatch("badge1","link1",
-"2026-03-28T14:30:00",
-"2026-03-28T16:30:00",
-"https://www.youtube.com/watch?v=RuGXo-KUFUY");
-
-// ===== TRẬN 2 =====
-updateMatch("badge2","link2",
-"2026-03-28T15:30:00",
-"2026-03-28T17:30:00",
-"https://www.youtube.com/watch?v=RuGXo-KUFUY");
-
-function updateMatch(badgeId, linkId, start, end, live){
+function setupMatch(badgeId, linkId, start, end, liveLink){
     const badge = document.getElementById(badgeId);
     const link = document.getElementById(linkId);
 
@@ -256,24 +267,27 @@ function updateMatch(badgeId, linkId, start, end, live){
 
         if(now < new Date(start)){
             badge.innerHTML = "⏳ SẮP DIỄN RA";
-            badge.style.background="gray";
-            link.href="#";
+            badge.style.background = "gray";
+            link.href = "#";
         }
         else if(now <= new Date(end)){
             badge.innerHTML = "🔴 LIVE";
-            badge.style.background="red";
-            link.href=live;
+            badge.style.background = "red";
+            link.href = liveLink;
         }
         else{
             badge.innerHTML = "🎬 ĐÃ KẾT THÚC";
-            badge.style.background="#ff5a1f";
-            link.href=live;
+            badge.style.background = "#ff5a1f";
+            link.href = liveLink;
         }
     }
 
     update();
     setInterval(update,30000);
 }
+
+setupMatch("liveBadge1","matchLink1","2026-03-28T14:30:00","2026-03-28T16:30:00","https://www.youtube.com/watch?v=RuGXo-KUFUY");
+setupMatch("liveBadge2","matchLink2","2026-03-28T15:30:00","2026-03-28T17:30:00","https://www.youtube.com/watch?v=RuGXo-KUFUY");
 
 </script>
 
