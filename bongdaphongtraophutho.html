@@ -32,9 +32,10 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:0 5%;
-    height:80px;
+    padding:10px 5%;
     background:#06101b;
+    flex-wrap:wrap;
+    gap:10px;
 }
 
 /* LOGO */
@@ -45,7 +46,9 @@ header{
 /* MENU */
 nav{
     display:flex;
-    gap:20px;
+    gap:10px;
+    flex-wrap:wrap;
+    justify-content:center;
 }
 
 nav a{
@@ -112,6 +115,21 @@ nav a{
 
 /* MOBILE */
 @media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav{
+        justify-content:center;
+    }
+
+    .btn-buy{
+        width:100%;
+        text-align:center;
+    }
+
     .banner{
         flex-direction:column;
         text-align:center;
@@ -130,12 +148,12 @@ nav a{
 <header>
 
 <div class="logo">
-    <img src="https://github.com/bongdaphongtraophutho/live/blob/main/News%20Live%20Media.png?raw=true" alt="NEWS LIVE MEDIA">
+    <img src="C:\NEWS LIVE MEDIA\Logo\Logo Live\News Live Media.png" alt="NEWS LIVE MEDIA">
 </div>
 
 <nav>
-    <a href="#">Trang chủ</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href="https://www.tiktok.com/@bongdaphutho19">Highlight</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#">Trang chủ</a> |
+    <a href="https://www.tiktok.com/@bongdaphutho19">Highlight</a> |
     <a href="#">Bình chọn cầu thủ</a>
 </nav>
 
