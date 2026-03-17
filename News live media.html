@@ -196,18 +196,21 @@ nav a{
     max-height:40px;
 }
 }
-   .sponsor-bar{
+/* ===== SPONSOR NHỎ GỌN ===== */
+.sponsor-bar{
     display:flex;
     align-items:center;
     justify-content:center;
-    gap:12px;
-    height:50px;              /* CHIỀU CAO CẢ THANH */
+    gap:10px;
+
+    height:20px;        /* CHỈ ~20% header (header bạn 80px) */
+    padding:5px 0;
     overflow:hidden;
 }
 
-/* TẤT CẢ LOGO / GIF */
+/* LOGO / GIF */
 .sponsor-bar img{
-    height:32px;              /* CHIỀU CAO LOGO */
+    height:100%;        /* ăn theo sponsor-bar */
     width:auto;
     object-fit:contain;
 }
