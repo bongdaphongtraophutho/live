@@ -29,16 +29,12 @@ img{
 
 /* HEADER */
 header{
-    position:sticky;
-    top:0;
-    z-index:999;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:10px 5%;
+    padding:0 5%;
+    height:80px;
     background:#06101b;
-    flex-wrap:wrap;
-    gap:10px;
 }
 
 /* LOGO */
@@ -49,9 +45,7 @@ header{
 /* MENU */
 nav{
     display:flex;
-    gap:10px;
-    flex-wrap:wrap;
-    justify-content:center;
+    gap:20px;
 }
 
 nav a{
@@ -77,9 +71,57 @@ nav a{
     gap:40px;
 }
 
+/* ẢNH */
+.banner img{
+    width:100%;
+    max-width:700px;
+    border-radius:10px;
+}
+
+/* WRAP ẢNH */
+.img-wrap{
+    position:relative;
+    max-width:700px;
+    width:100%;
+}
+
+/* PLAY BUTTON */
+.play-btn{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:rgba(0,0,0,0.6);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    border:2px solid white;
+}
+
+/* BADGE */
+.badge{
+    position:absolute;
+    top:15px;
+    left:15px;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:bold;
+    background:gray;
+}
+
 /* TEXT */
 .match-info{
     max-width:500px;
+}
+
+.match-info h2{
+    font-size:clamp(16px, 2vw, 22px);
+    line-height:1.4;
 }
 
 /* TITLE */
@@ -99,145 +141,134 @@ nav a{
     color:white;
 }
 
+.btn-watch:hover{
+    background:#ff7a3d;
+}
+
 /* MOBILE */
 @media(max-width:768px){
-
-    header{
-        flex-direction:column;
-        text-align:center;
-    }
-
     .banner{
         flex-direction:column;
         text-align:center;
-    }
-
-    .match-info{
-        max-width:100%;
     }
 }
 
 </style>
 </head>
 
-<body id="top">
+<body>
 
 <header>
 
 <div class="logo">
-    <img src="https://github.com/bongdaphongtraophutho/live/blob/main/News%20Live%20Media.png?raw=true">
+    <img src="C:\NEWS LIVE MEDIA\Logo\Logo Live\News Live Media.png">
 </div>
 
 <nav>
-    <a href="#top">Trang chủ</a> |
-    <a href="https://www.tiktok.com/@bongdaphutho19">Highlight</a> |
-    <a href="#binhchon">Bình chọn cầu thủ</a>
+    <a href="#">Trang chủ</a>
+    <a href="https://www.tiktok.com/@bongdaphutho19">Highlight</a>
+    <a href="#vote">Bình chọn cầu thủ</a>
 </nav>
 
-<a href="tel:097888381"
-   class="btn-buy"
-   style="background:#28a745;">
+<a href="tel:097888381" class="btn-buy" style="background:#28a745;">
 📞 Liên hệ trực tiếp
 </a>
 
 </header>
 
-<div style="position:relative;width:100%;max-width:700px;">
+<!-- MATCH 1 -->
+<section class="banner">
 
-<a id="matchLink1" href="#" target="_blank">
+<div class="img-wrap">
+<a id="link1" href="#" target="_blank">
 
-<img src="https://scontent.fhan15-2.fna.fbcdn.net/v/t39.30808-6/652154486_1569316985195055_1631050402185690797_n.jpg">
+<img src="C:\Users\ADMIN\Downloads\GIẢI THPT 2026 (10).png">
 
-<!-- BADGE -->
-<div id="liveBadge1" style="
-position:absolute;
-top:15px;
-left:15px;
-background:gray;
-padding:5px 12px;
-border-radius:20px;
-font-size:14px;
-font-weight:bold;">
-⏳ SẮP DIỄN RA
-</div>
+<div id="badge1" class="badge">⏳ SẮP DIỄN RA</div>
 
-<!-- PLAY -->
-<div style="
-position:absolute;
-top:50%;
-left:50%;
-transform:translate(-50%,-50%);
-width:70px;
-height:70px;
-background:rgba(0,0,0,0.6);
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:30px;
-border:2px solid white;">
-▶
-</div>
+<div class="play-btn">▶</div>
 
 </a>
+</div>
+
+<div class="match-info">
+
+<h2>GIẢI BÓNG ĐÁ THPT PHÚ THỌ LẦN II<br>TRANH CUP DU HỌC VIỆT VƯỢNG - CÔ NGÀ KOREA NĂM 2026</h2>
+
+<br>
+
+<div style="font-size:22px;opacity:0.9;">(Vòng 1)</div>
+
+<h1>ĐỘI A VS ĐỘI B</h1>
+
+<div style="font-size:20px;opacity:0.85;">
+<b>14:30</b> - 28/3/2026
+</div>
+
+<br>
+
+<a href="#" class="btn-watch">▶ Xem Facebook</a><br>
+<a href="#" class="btn-watch">▶ Xem Youtube</a>
 
 </div>
 
-<hr style="margin:40px 0;">
+</section>
 
-<div style="position:relative;width:100%;max-width:700px;">
+<hr style="border:none;height:1px;background:rgba(255,255,255,0.15);margin:40px 0;">
 
-<a id="matchLink2" href="#" target="_blank">
+<!-- MATCH 2 -->
+<section class="banner">
 
-<img src="https://scontent.fhan15-2.fna.fbcdn.net/v/t39.30808-6/652154486_1569316985195055_1631050402185690797_n.jpg">
+<div class="img-wrap">
+<a id="link2" href="#" target="_blank">
 
-<div id="liveBadge2" style="
-position:absolute;
-top:15px;
-left:15px;
-background:gray;
-padding:5px 12px;
-border-radius:20px;
-font-size:14px;
-font-weight:bold;">
-⏳ SẮP DIỄN RA
-</div>
+<img src="C:\Users\ADMIN\Downloads\GIẢI THPT 2026 (10).png">
 
-<div style="
-position:absolute;
-top:50%;
-left:50%;
-transform:translate(-50%,-50%);
-width:70px;
-height:70px;
-background:rgba(0,0,0,0.6);
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:30px;
-border:2px solid white;">
-▶
-</div>
+<div id="badge2" class="badge">⏳ SẮP DIỄN RA</div>
+
+<div class="play-btn">▶</div>
 
 </a>
-
-</div>
-<hr style="margin:40px 0;">
-
-<!-- GOOGLE FORM -->
-<div id="binhchon" style="width:100%;padding:0 5%;margin-bottom:50px;">
-  <div style="position:relative;padding-top:120%;">
-    <iframe 
-      src="https://docs.google.com/forms/d/e/1FAIpQLSczkAq5Ju4sLAr7GF8ihSKmxPNk3uaTug0DFt2LYKw-bcUI9w/viewform?embedded=true"
-      style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;">
-    </iframe>
-  </div>
 </div>
 
+<div class="match-info">
+
+<h2>GIẢI BÓNG ĐÁ THPT PHÚ THỌ LẦN II<br>TRANH CUP DU HỌC VIỆT VƯỢNG - CÔ NGÀ KOREA NĂM 2026</h2>
+
+<br>
+
+<div style="font-size:22px;opacity:0.9;">(Vòng 1)</div>
+
+<h1>ĐỘI C VS ĐỘI D</h1>
+
+<div style="font-size:20px;opacity:0.85;">
+<b>14:30</b> - 28/3/2026
+</div>
+
+<br>
+
+<a href="#" class="btn-watch">▶ Xem Facebook</a><br>
+<a href="#" class="btn-watch">▶ Xem Youtube</a>
+
+</div>
+
+</section>
+
+<hr style="border:none;height:1px;background:rgba(255,255,255,0.15);margin:40px 0;">
+
+<!-- FORM -->
+<div id="vote" style="width:100%;padding:0 5%;margin-bottom:50px;">
+<div style="position:relative;padding-top:120%;">
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSczkAq5Ju4sLAr7GF8ihSKmxPNk3uaTug0DFt2LYKw-bcUI9w/viewform?embedded=true"
+style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;">
+</iframe>
+</div>
+</div>
+
+<!-- SCRIPT AUTO -->
 <script>
 
-function setupMatch(badgeId, linkId, start, end, liveLink){
+function setupMatch(badgeId, linkId, start, end, url){
     const badge = document.getElementById(badgeId);
     const link = document.getElementById(linkId);
 
@@ -252,12 +283,12 @@ function setupMatch(badgeId, linkId, start, end, liveLink){
         else if(now <= new Date(end)){
             badge.innerHTML = "🔴 LIVE";
             badge.style.background = "red";
-            link.href = liveLink;
+            link.href = url;
         }
         else{
             badge.innerHTML = "🎬 HIGHLIGHT";
             badge.style.background = "#ff5a1f";
-            link.href = liveLink;
+            link.href = url;
         }
     }
 
@@ -265,23 +296,9 @@ function setupMatch(badgeId, linkId, start, end, liveLink){
     setInterval(update,30000);
 }
 
-// TRẬN 1
-setupMatch(
-"liveBadge1",
-"matchLink1",
-"2026-03-28T14:30:00",
-"2026-03-28T16:30:00",
-"https://www.youtube.com/watch?v=RuGXo-KUFUY"
-);
+setupMatch("badge1","link1","2026-03-28T14:30:00","2026-03-28T16:30:00","https://www.youtube.com/watch?v=RuGXo-KUFUY");
 
-// TRẬN 2
-setupMatch(
-"liveBadge2",
-"matchLink2",
-"2026-03-28T15:30:00",
-"2026-03-28T17:30:00",
-"https://www.youtube.com/watch?v=RuGXo-KUFUY"
-);
+setupMatch("badge2","link2","2026-03-28T15:30:00","2026-03-28T17:30:00","https://www.youtube.com/watch?v=RuGXo-KUFUY");
 
 </script>
 
