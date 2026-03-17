@@ -44,10 +44,15 @@ header{
 }
 
 /* LOGO */
-.logo img{
-    height:50px;
+.logo{
+    flex-shrink:0; /* không cho bị giãn */
 }
 
+.logo img{
+    height:50px;
+    width:auto;
+    max-height:50px; /* CHẶN CỨNG */
+}
 /* MENU */
 nav{
     display:flex;
@@ -186,7 +191,10 @@ nav a{
         max-width:100%;
         text-align:center;
     }
-
+.logo img{
+    height:40px; /* nhỏ lại cho gọn */
+    max-height:40px;
+}
 }
 
 </style>
