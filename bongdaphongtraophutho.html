@@ -145,12 +145,59 @@ nav a{
     background:#ff7a3d;
 }
 
-/* MOBILE */
+/* MOBILE (FIX KÍCH CỠ) */
 @media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        height:auto;
+        padding:10px 5%;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
     .banner{
         flex-direction:column;
+        padding:25px 5%;
+        gap:20px;
+    }
+
+    .img-wrap{
+        max-width:100%;
+    }
+
+    .match-info{
+        max-width:100%;
         text-align:center;
     }
+
+    .match-info h1{
+        font-size:28px;
+    }
+
+    .match-info h2{
+        font-size:16px;
+    }
+
+    .btn-watch{
+        width:100%;
+        text-align:center;
+    }
+
+    .play-btn{
+        width:55px;
+        height:55px;
+        font-size:24px;
+    }
+
+    .badge{
+        font-size:12px;
+        padding:4px 10px;
+    }
+
 }
 
 </style>
