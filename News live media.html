@@ -212,7 +212,27 @@ nav a{
     width:auto;
     object-fit:contain;
 }
+/* ===== DIVIDER CÓ GIF ===== */
+.divider{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    margin:40px 0;
+}
 
+/* ĐƯỜNG KẺ */
+.divider .line{
+    flex:1;
+    height:1px;
+    background:rgba(255,255,255,0.15);
+}
+
+/* GIF */
+.divider img{
+    height:20px;   /* chỉnh nhỏ/gọn */
+    width:auto;
+}
 </style>
 </head>
 
@@ -227,9 +247,6 @@ nav a{
 
 <a href="#">Trang chủ</a>&nbsp;&nbsp;&nbsp;|&nbsp;
 <a href="https://www.tiktok.com/@bongdaphutho19">Highlight</a>
-
-<img src="https://bongdaphongtraophutho.github.io/live/Bi%E1%BB%83n%20qu%E1%BA%A3ng%20c%C3%A1o.gif" class="gif-icon">
-
 </nav>
 
 <a href="tel:097888381"
@@ -240,6 +257,7 @@ nav a{
 
 </header>
 
+    
 <!-- MATCH 1 -->
 <section class="banner">
 
@@ -260,10 +278,7 @@ nav a{
 <h2>GIẢI BÓNG ĐÁ VÔ ĐỊCH SÂN 7 ĐIỆN MÁY XANH ĐÔNG TÂY BẮC - MÙA GIẢI 2026</h2>
 <br>
 <h3>VƯỢT ĐỈNH IPO - VƯƠN TẦM KHU VỰC - RỰC LỬA SÂN CỎ</h3>
-
-
-<br<img src="https://bongdaphongtraophutho.github.io/live/Bi%E1%BB%83n%20qu%E1%BA%A3ng%20c%C3%A1o.gif" class="gif-icon">
->
+<br>
 
 <div style="font-size:22px;opacity:0.9;">(Trận 1)</div>
 
@@ -282,7 +297,11 @@ nav a{
 
 </section>
 
-<hr style="border:none;height:1px;background:rgba(255,255,255,0.15);margin:40px 0;">
+<div class="divider">
+    <img src="https://github.com/bongdaphongtraophutho/live/blob/main/Bi%E1%BB%83n%20qu%E1%BA%A3ng%20c%C3%A1o.gif?raw=true">
+    <div class="line"></div>
+    <img src="https://github.com/bongdaphongtraophutho/live/blob/main/Bi%E1%BB%83n%20qu%E1%BA%A3ng%20c%C3%A1o.gif?raw=true">
+</div>
 
 <!-- MATCH 2 -->
 <section class="banner">
