@@ -352,42 +352,7 @@ nav a{
 </section>
 
 <hr style="border:none;height:1px;background:rgba(255,255,255,0.15);margin:40px 0;">
-<!-- SCRIPT AUTO -->
-<script>
 
-function setupMatch(badgeId, linkId, start, end, url){
-    const badge = document.getElementById(badgeId);
-    const link = document.getElementById(linkId);
-
-    function update(){
-        const now = new Date();
-
-        if(now < new Date(start)){
-            badge.innerHTML = "⏳ SẮP DIỄN RA";
-            badge.style.background = "gray";
-            link.href = "#";
-        }
-        else if(now <= new Date(end)){
-            badge.innerHTML = "🔴 LIVE";
-            badge.style.background = "red";
-            link.href = url;
-        }
-        else{
-            badge.innerHTML = "🎬 ĐÃ KẾT THÚC";
-            badge.style.background = "#ff5a1f";
-            link.href = url;
-        }
-    }
-
-    update();
-    setInterval(update,30);
-}
-
-setupMatch("badge1","link1","2026-03-28T13:30:00","2026-03-28T15:30:00","https://facebook.com/bongdaphongtraopt");
-
-setupMatch("badge2","link2","2026-03-28T15:30:00","2026-03-28T17:30:00","https://facebook.com/bongdaphongtraopt");
-
-</script>
 
 </body>
 </html>
